@@ -69,7 +69,10 @@ WantedBy=multi-user.target
 systemctl enable shadowsocks
 systemctl start shadowsocks
 ```
-
+执行：
+```sh
+systemctl status shadowsocks -l
+```
 如果服务启动成功，则控制台显示的信息应该类似这样：
 ```sh
 shadowsocks.service - Shadowsocks
