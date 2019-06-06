@@ -89,6 +89,17 @@ shadowsocks.service - Shadowsocks
 
 ```
 
+- *如果端口挂了，或者需要重新配置json文件：*
+```sh
+# 停止ss服务
+systemctl stop shadowsocks
+# 更改json文件
+vi /etc/shadowsocks.json
+# 重新启动服务
+systemctl start shadowsocks
+```
+*如果ip挂了的话，就只能删除服务器重建了*
+
 ## 3. 配置BBR
 TCP BBR是谷歌出品的TCP拥塞控制算法。BBR目的是要尽量跑满带宽，并且尽量不要有排队的情况。BBR可以起到单边加速TCP连接的效果。
 执行以下命令（第1个命令执行时间会有点久）
