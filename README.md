@@ -121,6 +121,9 @@ sudo apt-get update
 sudo apt-get install shadowsocks-qt5
 ```
 
-**参考**：
+## TODO
+- 更新一键安装ss并配置bbr的脚本
+
+## 参考
 - https://blog.51cto.com/zero01/2064660
 - https://www.cnblogs.com/zzugyl/p/10277012.html
