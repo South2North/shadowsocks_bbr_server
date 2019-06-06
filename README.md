@@ -15,7 +15,7 @@ python get-pip.py
 - 在控制台执行以下命令安装shadowsocks：
 ```sh
 # 升级pip
-pip install --update pip
+pip install --upgrade pip
 pip install shadowsocks
 ```
 - 安装完成后，需要创建shadowsocks的配置文件`/etc/shadowsocks.json`，使用vi编辑：
