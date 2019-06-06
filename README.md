@@ -104,7 +104,7 @@ systemctl start shadowsocks
 TCP BBR是谷歌出品的TCP拥塞控制算法。BBR目的是要尽量跑满带宽，并且尽量不要有排队的情况。BBR可以起到单边加速TCP连接的效果。
 执行以下命令（第1个命令执行时间会有点久）
 ```sh
-yum update
+yum -y update
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 ```
 执行完之后确认重启，过一段时间应该就能成功使用了。可以再通过ssh连上server确认：
