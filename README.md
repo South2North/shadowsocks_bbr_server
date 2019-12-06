@@ -102,7 +102,7 @@ systemctl start shadowsocks
 
 ## 3. 配置BBR
 TCP BBR是谷歌出品的TCP拥塞控制算法。BBR目的是要尽量跑满带宽，并且尽量不要有排队的情况。BBR可以起到单边加速TCP连接的效果。
-执行以下命令（第1个命令现在执行到NetworkManager会断开，不是很清楚咋回事，不输这句貌似也没什么影响）
+执行以下命令（**第1个命令现在执行到NetworkManager会断开，不是很清楚咋回事，不输这句貌似也没什么影响**）
 ```sh
 # yum -y update
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
