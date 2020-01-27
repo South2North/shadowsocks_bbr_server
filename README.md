@@ -110,8 +110,14 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 执行完之后确认重启，过一段时间应该就能成功使用了。可以再通过ssh连上server确认：
 ```sh
 sysctl net.ipv4.tcp_available_congestion_control
-# 输出结果中有bbr
+# 输出结果中有bbr：
 # net.ipv4.tcp_available_congestion_control = bbr cubic reno
+# 如果没有，再输入一次：
+./bbr.sh
+# 以下表示设置成功：
+# Info: Your kernel version is greater than 4.9, directly setting TCP BBR...
+# Info: Setting TCP BBR completed...
+
 ```
 
 ## 4. Ubuntu安装shadowsocks客户端（可选）
